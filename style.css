@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+:root {
+  --valami: rgb(0, 0, 0);
+}
+.header {
+  padding: 3rem;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  display: block;
+  color: rgb(236, 236, 236);
+}
+.header--dark {
+  background-color: rgb(51, 57, 64);
+}
+.header__title {
+  display: inline;
+  font-size: 2rem;
+}
+.header__search {
+  float: right;
+  display: inline;
+}
+.search__input {
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 0.375 0.75;
+  font-size: 1.2rem;
+  transition: border-color 0.15s;
+}
+.search__input:focus {
+  border-color: rgb(128, 189, 255);
+}
+.search__btn {
+  color: white;
+  background-color: rgb(0, 123, 255);
+}
+main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  height: 100vh;
+}
+
+.aside {
+  align-items: flex-start;
+  flex: 1 0 auto;
+  color: white;
+  background-color: rgb(33, 37, 41);
+}
+.main__nav {
+  margin-right: 2rem;
+  background-color: rgb(33, 37, 41);
+}
+.nav__ul {
+  margin-top: 5rem;
+}
+.main__nav ul {
+  list-style: none;
+}
+.main__nav ul li {
+  margin-bottom: 3rem;
+  text-decoration: none;
+}
+.main__nav ul li span {
+  float: right;
+}
+.nav__ul--small {
+  color: rgba(166, 171, 175, 0.924);
+  font-size: 1.3rem;
+}
+.nav__ul--main {
+  font-size: 1.7rem;
+  color: white;
+}
+.nav__ul--middle {
+  color: rgba(231, 228, 228, 0.815);
+  font-size: 1.6rem;
+}
+.content {
+  margin: 1rem;
+  flex: 4 0 auto;
+  background-color: white;
+}
+h1 {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+.main__breadcrumb {
+  color: rgba(0, 0, 0, 0.616);
+  background-color: rgb(233, 236, 239);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+
+  display: block;
+  width: 95%;
+
+  margin-bottom: 5rem;
+}
+.main__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+}
+.main__card {
+  width: 23%;
+  padding: 2rem 4rem;
+  transition: background-color 0.3s;
+}
+.card__top {
+  margin-bottom: 3rem;
+  border-top: 0.25rem;
+  display: block;
+}
+
+.card__bottom {
+  display: block;
+  position: relative;
+  bottom: 0;
+  font-size: 1.1rem;
+  border-bottom: 0.25rem;
+}
+.card__bottom span {
+  float: right;
+}
+
+.main__card--blue {
+  background-color: rgb(0, 123, 255);
+}
+
+.main__card--yellow {
+  background-color: rgb(255, 193, 7);
+}
+
+.main__card--green {
+  background-color: rgb(40, 167, 69);
+}
+
+.main__card--red {
+  background-color: rgb(220, 53, 69);
+}
